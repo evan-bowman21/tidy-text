@@ -1,0 +1,7 @@
+"0","jungle <- gutenberg_download(140)"
+"2","Determining mirror for Project Gutenberg from http://www.gutenberg.org/robot/harvest
+"
+"2","Using mirror http://aleph.gutenberg.org
+"
+"0","# The Quest of the Silver Fleece"
+"0","gutenberg_authors[(str_detect(gutenberg_authors$author, ""Du Bois"")),]"

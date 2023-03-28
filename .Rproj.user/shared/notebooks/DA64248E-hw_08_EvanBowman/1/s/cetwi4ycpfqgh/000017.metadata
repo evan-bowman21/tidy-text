@@ -1,0 +1,1 @@
+{"height":5.0,"width":6.0,"size_behavior":1,"conditions":[[0,"`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n"],[1,"Warning: Removed 849 rows containing non-finite values (stat_bin)."],[1,"Warning: Removed 6 rows containing missing values (geom_bar)."]]}

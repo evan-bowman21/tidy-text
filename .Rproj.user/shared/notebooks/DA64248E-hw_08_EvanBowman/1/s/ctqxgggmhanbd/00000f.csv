@@ -1,0 +1,3 @@
+"0","ggplot(sentiment_words, aes(index, n)) +"
+"0","  geom_col(aes(fill = sentiment)) +"
+"0","  facet_wrap(~book)"

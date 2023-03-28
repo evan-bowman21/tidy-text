@@ -1,0 +1,4 @@
+"0","common_sentiment <- combined_tidy %>% group_by(book) %>%"
+"0","  inner_join(get_sentiments(""bing""), by = ""word"") %>%"
+"0","  count(word, sentiment, sort = TRUE) %>%"
+"0","  ungroup()"

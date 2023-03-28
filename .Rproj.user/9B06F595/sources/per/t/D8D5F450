@@ -1,0 +1,29 @@
+{
+    "id": "D8D5F450",
+    "path": "~/Dropbox/Grad_School/Semester_Two/DATA_613/HW/hw08-evan-bowman21/analysis/hw_08_EvanBowman.Rmd",
+    "project_path": "analysis/hw_08_EvanBowman.Rmd",
+    "type": "r_markdown",
+    "hash": "1584916794",
+    "contents": "",
+    "dirty": false,
+    "created": 1668698069183.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "55,44",
+        "scrollLine": "48",
+        "last_setup_crc32": "234E297Fe6f44b4b",
+        "docOutlineVisible": "1",
+        "ignored_words": "bing,nrc,aes,coord,Replot,Bing,tf,idf,dataframe,Unnest,idfs,Hendon,Canty\n"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1670252976,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1670252976848,
+    "read_only": false,
+    "read_only_alternatives": []
+}

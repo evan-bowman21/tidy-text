@@ -1,0 +1,4 @@
+"0","twain_tf_idf %>%"
+"0","  arrange(desc(tf_idf)) %>%"
+"0","  select(word, title, tf_idf) %>%"
+"0","  slice(1:15)"

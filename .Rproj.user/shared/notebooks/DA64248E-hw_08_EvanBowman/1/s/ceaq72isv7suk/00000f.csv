@@ -1,0 +1,8 @@
+"0","combined_tidy %>%"
+"0","  inner_join(get_sentiments(""bing""), by = ""word"") %>%"
+"0","  count(index = linenumber %/% 50, sentiment, book, sort = TRUE) %>%"
+"0","  pivot_wider(names_from = sentiment, values_from = n, values_fill = list(n=0)) %>%"
+"0","  mutate(net = positive - negative) %>%"
+"0","  ggplot(aes(index, net, fill = book)) +"
+"0","  geom_col(show.legend = F) +"
+"0","  facet_wrap(~book, scales = ""free_x"")"
