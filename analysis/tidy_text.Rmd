@@ -1,5 +1,5 @@
 ---
-title: "DATA-413/613 Homework: Tidy Text"
+title: "Tidy Text"
 author: "Evan Bowman"
 date: "`r Sys.Date()`"
 output:
@@ -20,12 +20,8 @@ knitr::opts_chunk$set(fig.align  = "center",
                       fig.width  = 6)
 ```
 
-# Instructions {-}
-
-# Rubric {-}
-
 # Sentiment Analysis
-```{r}
+```{r, include=F}
 suppressMessages(library(tidyverse))
 library(gutenbergr)
 library(tidytext)
@@ -132,17 +128,16 @@ sentiment_words <- combined_tidy %>%
 nrow(sentiment_words)
 ```
 
-- Plot the count of the sentiments for each block in each book in an appropriate faceted plot with the books in two columns and the sentiments in 8 rows. 
-- Be sure to remove the legend.
+- Plot the count of the sentiments for each block in each book in an appropriate faceted plot.
 - Interpret the plots for each book and then compare them. 
 - Why did the values drop off so suddenly at the end?
 ```{r}
 ggplot(sentiment_words, aes(index, n)) +
-  geom_col(aes(fill = sentiment)) +
+  geom_col(aes(fill = sentiment)) + 
   facet_wrap(~book)
 ```
 
-The sentiment structure of both books are relatively similar when blocked by 500. Values seem to drop off at the end because, as the story concludes, I feel words carry less sentiment as there is little plot building or explaining occurring.
+The sentiment structure of both books are relatively similar when blocked by 500. Values seem to drop off at the end because, as the story concludes, I feel words carry less sentiment as there is little plot building or explaining occurring. I would also hypothesize that there are fewer words in the final block given the value we assigned to each.
 
 7. Using bing, create a new data frame with the counts of the positive and negative sentiment words for each book.
 ```{r}
@@ -330,18 +325,4 @@ twain_tf_idf %>%
 
 - Interpret the plots.
 
-It seems the majority of words are names, titles, or prefix/family prefixes (Mr,aunt, etc.). The remaining words also seem to be overwhelmingly traditional nouns. There are few verbs or adjectives visualized on these graphs. 
-
-# Extra Credit Podcasts
-
-- Choose **One** of the following podcasts and answer the questions below:  
-
-a. [Sentiment Preserving Fake Reviews](https://podcasts.apple.com/us/podcast/data-skeptic/id890348705?i=1000483067378)  
-The [Original paper](https://arxiv.org/abs/1907.09177)
-
-b. [Data in  Life: Authorship Attribution in Lennon-McCartney Songs](https://podcasts.apple.com/us/podcast/authorship-attribution-of-lennon-mccartney-songs/id890348705?i=1000485519404)
-
-
-1. What are some key ideas from this podcast relevant to text sentiment analysis/authorship attribution?
-
-2. How do you think the ideas discussed may be relevant in your future work?
+It seems the majority of words are names, titles, or prefix/family prefixes (Mr, aunt, etc.). The remaining words also seem to be overwhelmingly traditional nouns. There are few verbs or adjectives visualized within these graphs. 
